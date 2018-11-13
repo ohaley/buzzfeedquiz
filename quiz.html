@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Coming Soon' rel='stylesheet'>
+<title>Which Horror Movie Would Your Survive Based On Your Life Now?</title>
+<style>
+
+body {
+background-image: url("img/bckgrnd.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+h1 {
+font-family: 'Special Elite';
+clear: both;
+padding-top: 20px;
+}
+
+h2 {
+font-family: 'Special Elite';
+clear: both;
+padding-top: 20px;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: #eeeeee;
+border-radius: 10px;
+}
+
+
+
+input[type=radio] {
+  display: none;
+}
+
+input:checked + label img {
+  border:2px 
+  solid #00f
+  ;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+label {
+	display: inline;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="container" id="main">
+<div class="row" id="header">
+	<img src="img/Sonder.jpg" class="img-fluid" width="100%" height="auto" alt="">
+</div>
+
+<div>
+
+<form id="form1">
+
+<h2>How do you prefer to get around?</h2>
+<input type="radio" name="one" value="quiet" id="one_quiet"/>
+<label for="one_quiet">
+	<img src="img/quiet2.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="one" value="saw" id="one_saw"/>
+<label for="one_saw">
+	<img src="img/saw2.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="one" value="follows" id="one_follows"/>
+<label for="one_follows">
+	<img src="img/follows2.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="one" value="conj" id="one_conj"/>
+<label for="one_conj">
+	<img src="img/conj2.jpg" height="40%" width="40%">
+</label>
+
+<h2>Where would you consider "home"?</h2>
+<input type="radio" name="two" value="quiet" id="two_quiet"/>
+<label for="two_quiet">
+	<img src="img/quiet1.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="two" value="saw" id="two_saw"/>
+<label for="two_saw">
+	<img src="img/saw1.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="two" value="follows" id="two_follows"/>
+<label for="two_follows">
+	<img src="img/follows1.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="two" value="conj" id="two_conj"/>
+<label for="two_conj">
+	<img src="img/conj1.jpg" height="40%" width="40%">
+</label>
+
+<h2>What's your favorite thing to do when you're bored?</h2>
+<input type="radio" name="three" value="quiet" id="three_quiet"/>
+<label for="three_quiet">
+	<img src="img/quiet3.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="three" value="saw" id="three_saw"/>
+<label for="three_saw">
+	<img src="img/saw3.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="three" value="follows" id="three_follows"/>
+<label for="three_follows">
+	<img src="img/follows3.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="three" value="conj" id="three_conj"/>
+<label for="three_conj">
+	<img src="img/conj3.jpg" height="40%" width="40%">
+</label>
+
+<h2>Which image describes you the best?</h2>
+<input type="radio" name="four" value="quiet" id="four_quiet"/>
+<label for="four_quiet">
+	<img src="img/quiet4.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="four" value="saw" id="four_saw"/>
+<label for="four_saw">
+	<img src="img/saw4.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="four" value="follows" id="four_follows"/>
+<label for="four_follows">
+	<img src="img/follows4.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="four"  value="conj" id="four_conj"/>
+<label for="four_conj">
+	<img src="img/conj4.jpg" height="40%" width="40%">
+</label>
+
+<h2>What's your favorite genre of horror?</h2>
+<input type="radio" name="five" value="quiet" id="five_quiet"/>
+<label for="five_quiet">
+	<img src="img/quiet5.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="five" value="saw" id="five_saw"/>
+<label for="five_saw">
+	<img src="img/saw5.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="five" value="follows" id="five_follows"/>
+<label for="five_follows">
+	<img src="img/follows5.jpg" height="40%" width="40%">
+</label>
+<input type="radio" name="five"  value="conj" id="five_conj"/>
+<label for="five_conj">
+	<img src="img/conj5.jpg" height="40%" width="40%">
+</label>
+
+</div>
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+
+
+    
+<p id="answer"></p>
+<p id="answer2"></p>
+<p id="answer3"></p>
+<p id="answer4"></p>
+<p id="answer5"></p>
+
+</div>
+
+<script>
+document.getElementById("form1").onchange = function() {
+result = document.querySelector('input[name = "one"]:checked').value
+}
+document.getElementById("form1").onchange = function() {
+result = document.querySelector('input[name = "two"]:checked').value
+}
+document.getElementById("form1").onchange = function() {
+result = document.querySelector('input[name = "three"]:checked').value
+}
+document.getElementById("form1").onchange = function() {
+result = document.querySelector('input[name = "four"]:checked').value
+}
+document.getElementById("form1").onchange = function() {
+result = document.querySelector('input[name = "five"]:checked').value
+}
+
+document.getElementById("form1").onsubmit=function() {
+       one = document.querySelector('input[name = "one"]:checked').value;
+	   two = document.querySelector('input[name = "two"]:checked').value;
+	   three = document.querySelector('input[name = "three"]:checked').value;
+	   four = document.querySelector('input[name = "four"]:checked').value;
+	   five = document.querySelector('input[name = "five"]:checked').value;
+
+
+	 quiet = 0;
+	 saw = 0;
+	 follows = 0;
+	 conj = 0;
+
+	 function eachscore(x){
+	  if(x == "quiet") { quiet = quiet + 1}
+	  if(x == "saw") { saw = saw + 1}
+	  if(x == "follows") { follows = follows + 1}
+	  if(x == "conj") { conj = conj + 1}
+	  }
+
+ 	  eachscore(eval("one"));
+	  eachscore(eval("two"));
+	  eachscore(eval("three"));
+	  eachscore(eval("four"));
+	  eachscore(eval("five"));
+
+	  all = [quiet, saw, follows, conj];
+
+	  maxscore = Math.max.apply(Math,all);
+	  
+	  for(i=0; i<all.length; i++) {
+	  if(all[i]==maxscore) {
+	  highest = i;
+	  }
+	  }
+ 
+	  scores = [{index:0, feedback: "You would survive: A Quiet Place <br /><img src='img/quiet6.jpg' width='50%' height='auto' />"},
+	  {index:1, feedback: "You would survive: Saw <br /> <img src='img/saw6.jpg' width='50%' height='auto' />"},
+	  {index:2, feedback: "You would survive: It Follows <br /> <img src='img/follows6.jpg' width='50%' height='auto' />"},
+	  {index:3, feedback: "You would survive: The Conjuring <br /> <img src='img/conj6.jpg' width='50%' height='auto' />"}];
+
+	  for(i=0;i<scores.length; i++) {
+	  if(highest == scores[i].index) {
+	  document.getElementById("answer5").innerHTML = scores[i].feedback;
+	  }
+	  }
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+
+</body>
+</html>
